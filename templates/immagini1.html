@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+        <div class="imageContainer">
+            <h1>Castello Sforzesco</h1>
+            <img src="{{url_for('static', filename='images/castello_sforzesco.jpg')}}" align="middle"/>
+
+            <h1>Teatro alla scala</h1>
+            <img src="{{url_for('static', filename='images/scala.jpg')}}" align="middle"/>
+
+            <h1>Duomo</h1>
+            <img src="{{url_for('static', filename='images/duomo.jpg')}}" align="middle"/>
+
+            <h1>Santa Maria delle Grazie</h1>
+            <img src="{{url_for('static', filename='images/santamaria.jpg')}}" align="middle"/>
+            
+        </div>
+    </body>
+</html>
